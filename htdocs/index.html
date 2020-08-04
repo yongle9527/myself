@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link id="stylesheet" href="css/style1.css" type="text/css" rel="stylesheet">
+    <script src="js/sj1.js" type="text/javascript"></script>
+    <link rel="icon" href="image/eye-640509.ico">
+</head>
+<body>
+<div id="all">
+    <!--顶层框-->
+    <div id="header">
+        <div class="top">
+            <ul>
+                <li class="header_btn"><a href="#main">个人主页</a></li>
+                <li class="header_btn"><a href="#photo">我的照片</a></li>
+                <li class="header_btn"><a href="javascript:alert('资料未完善')">软件设计</a></li>
+                <li class="header_btn"><a href="javascript:alert('资料未完善')">学习资料</a></li>
+                <li class="header_btn"><a href="#web_page">网页元素</a></li>
+                <li class="header_btn"><a href="javascript:alert('资料未完善')">其他文件</a></li>
+            </ul>
+        </div>
+        <div class="bottom"></div>
+    </div>
+
+    <!--样式选择-->
+    <div id="style">
+        <div id="style1" class="style" onclick="f(1)">样式表1</div>
+        <div id="style2" class="style" onclick="f(2)">样式表2</div>
+    </div>
+
+    <!--主体部分-->
+    <div id="main">
+
+        <div id="home">
+            <div class="title"><h2>MY GALLERYS</h2></div>
+            <div class="content">
+                <ul>
+                    <li><img src="image/1.jpg"></li>
+                    <li><img src="image/2.jpg"></li>
+                    <li><img src="image/3.jpg"></li>
+                    <li><img src="image/4.jpg"></li>
+                </ul>
+                <ul>
+                    <li><img src="image/5.jpg"></li>
+                    <li><img src="image/6.jpg"></li>
+                    <li class=""><img src="image/7.jpg"></li>
+                    <li><img src="image/8.jpg"></li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="photo">
+            <div class="title"><h2>我的相册</h2></div>
+            <div class="content">
+                <ul>
+                    <li><a href="相册/3d/3d.html" target="_blank">3D相册</a></li>
+                    <li><a href="相册/flip/flip.html" target="_blank">翻页相册</a></li>
+                    <li><a href="相册/slide/slide.html" target="_blank">轮播相册</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="web_page">
+            <div class="title" title="页面元素"><h2>网页元素</h2></div>
+            <ul class="content">
+                <li><i></i><a href="网页设计/ghost_button/ghost_button.html" target="_blank">幽灵按钮</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

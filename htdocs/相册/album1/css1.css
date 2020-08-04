@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background: black;
+    perspective: 1000px;
+}
+
+.wrap {
+    width: 100px;
+    height: 200px;
+    margin: 100px auto;
+    /*background: black;*/
+    transform-style: preserve-3d;
+    position: relative;
+    /*transform: rotateX(-10deg);*/
+    animation: move 30s linear infinite;
+
+}
+
+.wrap ul {
+    display: block;
+    position: absolute;
+}
+
+.wrap li {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    background: url("photos/1.jpg");
+    background-size: 100px 200px;
+    /*box-shadow: 0 0 10px 10px red;*/
+    border-radius: 4px;
+    transition: all 1s ease-out;
+    -webkit-box-reflect: below 4px -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+@keyframes move {
+    from {
+        transform:rotateX(-10deg) rotateY(0deg);
+
+    }
+    to {
+        transform:rotateX(-10deg) rotateY(360deg);
+    }
+}
